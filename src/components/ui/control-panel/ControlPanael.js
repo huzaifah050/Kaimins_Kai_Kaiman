@@ -2,7 +2,7 @@ import React from 'react';
 import { Divider } from '@chakra-ui/core';
 import IconsPackage from './IconsPackage';
 import ControlUser from './ControlUser';
-import ControlKai from './ControlKai';
+import ControlSendKai from './ControlSendKai';
 
 function ControlPanael() {
   return (
@@ -10,7 +10,7 @@ function ControlPanael() {
       <h3>Logo if Possible</h3>
       <Divider />
       <IconsPackage />
-      <ControlKai />
+      <ControlSendKai />
       <ControlUser />
     </div>
   );

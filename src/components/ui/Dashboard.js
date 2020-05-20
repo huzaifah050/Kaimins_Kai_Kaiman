@@ -1,21 +1,19 @@
 import React from 'react';
-import { SimpleGrid, Box } from '@chakra-ui/core';
-import ControlPanael from './ControlPanael';
+import ControlPanael from './control-panel/ControlPanael';
+import Home from './home/Home';
 
 function Dashboard() {
   return (
     <div className="container">
-      <SimpleGrid columns={3} spacing={4} height="auto">
+      <div className="row">
         <div className="control-panel">
           <ControlPanael />
         </div>
         <div className="home">
-          <Box bg="tomato" height="80px"></Box>
+          <Home />
         </div>
-        <div className="explore">
-          <Box bg="tomato" height="80px"></Box>
-        </div>
-      </SimpleGrid>
+        <div className="explore"></div>
+      </div>
     </div>
   );
 }

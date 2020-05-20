@@ -4,7 +4,7 @@ function IconsPackage() {
   return (
     <>
       <div className="icon-package">
-        <div className="home icons">
+        <div className="homee icons">
           <div className="icon">
             <i class="fas fa-house-user"></i>
           </div>

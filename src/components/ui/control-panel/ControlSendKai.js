@@ -12,7 +12,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/core';
 
-function ControlKai() {
+function ControlSendKai() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const initialRef = React.useRef();
 
@@ -63,4 +63,4 @@ function ControlKai() {
   );
 }
 
-export default ControlKai;
+export default ControlSendKai;

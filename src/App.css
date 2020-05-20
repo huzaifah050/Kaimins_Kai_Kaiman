@@ -17,9 +17,16 @@ img {
   margin: 0 auto;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  /* grid-column-gap: 1em; */
+}
 .control-panel {
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  overflow-y: scroll;
+  /* position: fixed; */
   background-color: salmon;
 }
 
@@ -65,8 +72,68 @@ img {
   margin-left: 15px;
   font-weight: 700;
 }
+
 .home {
+  width: 100%;
+  background-color: blue;
 }
 
+.home-logo {
+  background-color: brown;
+  padding: 20px 0;
+  padding-left: 10px;
+  border-bottom: 1px solid yellow;
+  position: fixed;
+  top: 0;
+  width: 38%;
+}
+
+.home-logo h2 {
+  font-weight: 700;
+}
+
+.send-kai {
+  margin-top: 66px;
+  background-color: yellow;
+}
+
+.send-kai-flex {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.user-img-container {
+  width: 12%;
+  margin-right: 5px;
+}
+
+.send {
+  background-color: red;
+  padding: 7px 1.5rem;
+  border-radius: 100px;
+  margin-left: 400px;
+  margin-top: 10px;
+}
+
+.kai-card {
+  background-color: red;
+  padding: 13px 0;
+  border-top: 1px solid rgba(172, 255, 47, 0.966);
+  border-bottom: 1px solid greenyellow;
+  margin-top: 1px;
+}
+
+.kai-card-flex {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.kai-card-flex h3 {
+  font-weight: 700;
+}
 .explore {
+  background-color: rgb(118, 163, 35);
 }
