@@ -1,22 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function IconsPackage() {
   return (
     <>
       <div className="icon-package">
-        <div className="homee icons">
-          <div className="icon">
-            <i className="fas fa-house-user"></i>
-          </div>
+        <Link to="/">
+          <div className="homee icons">
+            <div className="icon">
+              <i className="fas fa-house-user"></i>
+            </div>
 
-          <h3>Home</h3>
-        </div>
-        <div className="profile icons">
-          <div className="icon">
-            <i className="far fa-user"></i>
+            <h3>Home</h3>
           </div>
-          <h3>Profile</h3>
-        </div>
+        </Link>
+        <Link to="/profile">
+          <div className="profile icons">
+            <div className="icon">
+              <i className="far fa-user"></i>
+            </div>
+            <h3>Profile</h3>
+          </div>
+        </Link>
         <div className="notification icons">
           <div className="icon">
             <i className="far fa-bell"></i>

@@ -1,13 +1,29 @@
-const initialState = {};
+const initialState = {
+  authError: null,
+};
 
 export default (state = initialState, { type, payload }) => {
-  return state;
-  // switch (type) {
+  switch (type) {
+    case 'LOGIN_SUCCESS':
+      console.log('login success');
+      return { ...state, authError: null };
 
-  // case typeName:
-  //   return { ...state, ...payload }
+    case 'LOGIN_FAIL':
+      console.log('login fail');
+      return { ...state, authError: payload };
 
-  // default:
-  //   return state
-  // }
+    case 'SIGNOUT_SUCCESS':
+      console.log('logout');
+      return state;
+
+    case 'SIGNUP_SUCCESS':
+      console.log('user created');
+      return { ...state, authError: null };
+
+    case 'SIGNUP_FAIL':
+      console.log('signup failed', payload);
+      return { ...state, authError: payload };
+    default:
+      return state;
+  }
 };

@@ -1,13 +1,19 @@
-const initialState = {};
+const initialState = {
+  url: null,
+  progress: 0
+};
 
 export default (state = initialState, { type, payload }) => {
-  return state;
-  // switch (type) {
+  switch (type) {
+    case 'ADD_KAI':
+      console.log('kai created', payload);
+      return state;
 
-  // // case typeName:
-  // //   return { ...state, ...payload }
+    case 'IMAGE_UPLOADED': 
+      console.log('image added');
+      return {...state, url: payload }
 
-  // // default:
-  //   return state
-  // }
+    default:
+      return state;
+  }
 };

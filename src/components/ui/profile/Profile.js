@@ -1,9 +1,9 @@
 import React from 'react';
-import ControlPanael from './control-panel/ControlPanael';
-import Home from './home/Home';
-import Explore from './explore/Explore';
+import ControlPanael from '../control-panel/ControlPanael';
+import Explore from '../explore/Explore';
+import ProfileContent from './ProfileContent';
 
-function Dashboard() {
+function Profile() {
   return (
     <div className="container">
       <div className="row">
@@ -11,7 +11,7 @@ function Dashboard() {
           <ControlPanael />
         </div>
         <div className="home">
-          <Home />
+          <ProfileContent />
         </div>
         <div className="explore">
           <Explore />
@@ -21,4 +21,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Profile;
